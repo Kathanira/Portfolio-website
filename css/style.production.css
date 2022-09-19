@@ -179,7 +179,8 @@ button:focus,
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 5% auto;
+  text-align: center;
 }
 .profile__text {
     -webkit-box-flex: 1;
