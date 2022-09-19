@@ -21,7 +21,6 @@ body {background-color: #357b70}*/
   --black: black;
 }
 
-
 /* HEADER UND HEADER NAVIGATION*/
  .page-header {
   display: flex;
@@ -68,7 +67,6 @@ body {background-color: #357b70}*/
   .navigation-list__item--active {
     text-decoration:underline!important;
   }
-
 
 /* Seiten Body*/
 body {
