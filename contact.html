@@ -49,26 +49,43 @@
         <a href="mailto:katge0508@gmail.com">Contact me</a><br><br>
     </div>
 
-   <div>
+  <!-- <div>
      <h2> Contact me via the contact form. Fill out the following fields </h2>
     <form action="#" method="post" id="contact-form">
 
        <label class="standard-label" for="contact-email">E-mail:* </label><br>
        <input type="email" id="contact-email" required><br>
-<!--durch den zusatz required wird das feld zu einem pflichtfeld -->
        <label class="standard-label" for="contact-telephone">Telephone: </label><br>
        <input type="tel" id="contact-telephone" ><br>
-<!-- <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> für Muster bei der Tel nummer zB -->
       <label class="standard-label" for="contact-message">Message:* </label><br>
       <textarea maxlength="240" required id="contact-message"></textarea>
-      <!-- <p>Remaining characters: <span class="charsleft">240</span></p>
-    Formel fehlt um die Zeichen zu zählen-->
       <br><br>
-<!-- Remember that you can use <textarea> to provide more space if the standard <input> tag isn’t long enough for the type of input you’re requesting (in this case, a message)-->
       <input type="submit" value="Send message">
     </form>
     <p>*Required fields</p>
-   </div>
+	</div> -->
+
+	<div class="container">
+	  <form id="contact" action="" method="post">
+	   <p>Contact me via the contact form.</p><br>
+	   <!-- <p>Fill out the following fields.</p>-->
+	    <fieldset>
+	      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+	    </fieldset>
+	    <fieldset>
+	      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+	    </fieldset>
+	    <fieldset>
+	      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+	    </fieldset>
+	    <fieldset>
+	      <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+	    </fieldset>
+	    <fieldset>
+	      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+	    </fieldset>
+	  </form>
+	</div>
 
 	</main>
 	<!-- Footer -->
