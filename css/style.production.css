@@ -20,7 +20,6 @@ body {background-color: #357b70}*/
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   }
 
@@ -345,6 +344,69 @@ fieldset {
   text-align:inherit;
   list-style-type: none;
 }
+/*SKILL BAR*/
+.container{
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: var(--black);
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: var(--black);
+}
+.bar.back::before{
+  background-color: var(--black);
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+/*ANIMATION*/
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
@@ -481,6 +543,7 @@ fieldset {
   .profile__portrait {
   width: 15%;
   padding: 10px;
+  border-radius: 0%;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -491,6 +554,7 @@ fieldset {
   .profile__portrait {
     width: 35%;
     padding: 10px;
+    border-radius: 0%;
     }
 }
 @media all and (max-width: 750px) {
