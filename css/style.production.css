@@ -541,14 +541,37 @@ fieldset {
     grid-template-columns: 1fr;
   }
   .profile__portrait {
-  width: 35%;
-  padding: 10px;
-  border: none;
-  }
-  .profile {
-    align-items: center;
-    align-content: center;
-  }
+   width: 75%;
+   padding: 10px;
+   margin: auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   border: none!important;
+   float: none;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   text-align: center;
+   }
+   .profile {
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -ms-flex-line-pack: center;
+         align-content: center;
+     text-align: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+   }
+   .profile__text {
+     text-align: center;
+   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
@@ -556,14 +579,37 @@ fieldset {
     grid-template-columns: 1fr 1fr;
   }
   .profile__portrait {
-    width: 35%;
-    padding: 10px;
-    border: none;
-    }
-    .profile {
-      align-items: center;
-      align-content: center;
-    }
+   width: 75%;
+   padding: 10px;
+   margin: auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   border: none!important;
+   float: none;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   text-align: center;
+   }
+   .profile {
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -ms-flex-line-pack: center;
+         align-content: center;
+     text-align: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+   }
+   .profile__text {
+     text-align: center;
+   }
 }
 @media all and (max-width: 750px) {
   .grid {
