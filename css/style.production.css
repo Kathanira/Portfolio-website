@@ -478,12 +478,20 @@ fieldset {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .profile__portrait {
+  width: 15%;
+  padding: 10px;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
+  .profile__portrait {
+    width: 35%;
+    padding: 10px;
+    }
 }
 @media all and (max-width: 750px) {
   .grid {
