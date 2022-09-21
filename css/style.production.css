@@ -541,9 +541,13 @@ fieldset {
     grid-template-columns: 1fr;
   }
   .profile__portrait {
-  width: 15%;
+  width: 35%;
   padding: 10px;
-  border-radius: 0%;
+  border: none;
+  }
+  .profile {
+    align-items: center;
+    align-content: center;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -554,7 +558,11 @@ fieldset {
   .profile__portrait {
     width: 35%;
     padding: 10px;
-    border-radius: 0%;
+    border: none;
+    }
+    .profile {
+      align-items: center;
+      align-content: center;
     }
 }
 @media all and (max-width: 750px) {
