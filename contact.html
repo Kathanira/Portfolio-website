@@ -19,7 +19,7 @@
 	 <ul role="menubar" class="navigation-list">
 			<!-- hashtag (<a href="#">Home</a>) is a placeholder for the link -->
       <li role="presentation">
-        <a href="index.html" target="_blank" role="menuitem" class="navigation-list__item">Home</a>
+        <a href="index.html"  role="menuitem" class="navigation-list__item">Home</a>
       </li>
       <li role="presentation">
         <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
@@ -66,7 +66,7 @@
 	</div> -->
 
 	<div class="container">
-	  <form id="contact" action="" method="post">
+	  <form id="contact" action="/" method="get" onsubmit="alert('Thanks for your message :)')">
 	   <p>Contact me via the contact form.</p><br>
 	   <!-- <p>Fill out the following fields.</p>-->
 	    <fieldset>
@@ -76,7 +76,7 @@
 	      <input placeholder="Your Email Address" type="email" tabindex="2" required>
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+	      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
 	    </fieldset>
 	    <fieldset>
 	      <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
